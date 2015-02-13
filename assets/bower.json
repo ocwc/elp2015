@@ -1,0 +1,17 @@
+{
+  "name": "elp",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "jasny-bootstrap": "~3.1.3"
+  },
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

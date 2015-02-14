@@ -1,0 +1,19 @@
+@import "mixins/gradients";
+
+.navbar-default {
+  text-transform: uppercase;
+  
+  #gradient > .vertical(@violetDark, @violetLight, 0%, 100%);
+}
+
+.navbar-nav > li {
+  @media @sm-up {
+    border-right: 1px solid @yellow;
+  }
+}
+
+.navbar-nav > li:last-child {
+  @media @sm-up {
+    border-right: none;
+  }
+}

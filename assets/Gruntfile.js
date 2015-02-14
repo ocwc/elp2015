@@ -5,6 +5,7 @@ module.exports = function (grunt) {
     'uglify': 'grunt-contrib-uglify',
     'jshint': 'grunt-contrib-jshint',
     'watch' : 'grunt-contrib-watch',
+    'cssmin': 'grunt-contrib-cssmin'
    });
 
   grunt.initConfig({
@@ -19,10 +20,13 @@ module.exports = function (grunt) {
           sourceMapRootpath: '../assets',
           paths: ['bower_components/bootstrap/less/'],
         },
-        files: {
-          '../css/style.css': 'less/style.less'
-        }
+        files: [
+          {src: 'less/style.less',
+           dest: '../css/style.css',
+           nonull: true}
+        ]
       },
+      
       develop_bootstrap: {
         options: {
           compress: false,
@@ -31,31 +35,35 @@ module.exports = function (grunt) {
           sourceMapRootpath: '../assets',
           paths: ['bower_components/bootstrap/less/']
         },
-        files: {
-          '../css/bootstrap.css': [
-            'less/bootstrap.less',
-          ],
-        }
+        files: [
+          {src: 'less/bootstrap.less', 
+           dest: '../css/bootstrap.css',
+           nonull: true},
+          {src: 'bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css',
+           dest: '../css/jasny-bootstrap.css',
+           nonull: true}
+        ]
       },
       
-      build: {
-        options: {
-          compress: true,
-          cleancss: true,
-          strictMath: true,
-          paths: ['bower_components/bootstrap/less/']
-        },
-        files: {
-          '../css/style.min.css': [
-            'less/bootstrap.less',
-            'less/style.less'
-          ]
-        }
+    },
+
+    cssmin: {
+      target: {
+        files: [
+          {dest: '../css/style.min.css',
+           src: [
+            '../css/bootstrap.css',
+            '../css/jasny-bootstrap.css',
+            '../css/style.css'
+           ],
+           nonull: true}
+        ]
       }
     },
 
     uglify: {
       options: {
+        nonull: true,
         sourceMap: true,
         compress: {
           drop_debugger: false
@@ -72,17 +80,19 @@ module.exports = function (grunt) {
           ]
         }
       },
+      
       develop_components: {
-        files: {
-          '../js/components.js': [
+        nonull: true,
+        dest: '../js/components.js',
+        src: [
             'bower_components/fingerprint/fingerprint.js',
             'bower_components/jasny-bootstrap/js/offcanvas.js',
             'bower_components/bootstrap/dist/js/bootstrap.js',
-            'js/dropdowns-enhancement.js',
-            'js/twitter.js',
-          ]
-        }
+            // 'js/dropdowns-enhancement.js',
+            // 'js/twitter.js',
+        ],
       },
+      
       develop_script: {
         files: {
           '../js/script.js': [
@@ -114,7 +124,7 @@ module.exports = function (grunt) {
       },
 
       less_bootstrap: {
-        files: ['less/bootstrap.less'],
+        files: ['less/bootstrap.less', 'less/_variables.less'],
         tasks: ['less:develop_bootstrap']
       },
 
@@ -125,7 +135,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('build', ['develop_build', 'less:build', 'jshint', 'uglify:build']);
+  grunt.registerTask('build', ['develop_build', 'cssmin', 'jshint', 'uglify:build']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('develop_build', ['less:develop_bootstrap', 'less:develop_style',
                                       'uglify:develop_script', 'uglify:develop_components',

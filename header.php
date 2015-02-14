@@ -15,9 +15,9 @@
 <![endif]-->
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('offcanvas-relative'); ?>>
 
-<div class="container container-logo">
+<div class="container container-logo hidden-xs">
 	<div class="row">
 		<div class="col-sm-2">
 			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="eLearning Pioneers" /></a>	
@@ -28,23 +28,33 @@
 	</div>
 </div>
 
-<div class="navbar navbar-default">
-    <div class="container navbar-container">
-        <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-        </div>
-        
-        <div class="navbar-offcanvas offcanvas">
-            <ul class="nav navbar-nav">
-                
-                
-            </ul>
-        </div>
+<div class="navbar container navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand visible-xs" href="/">eLearning Pioneers</a>
     </div>
+
+    <div class="navbar-offcanvas offcanvas">
+      <a class="navbar-brand visible-xs" href="/">eLearning Pioneers</a>
+      
+		<?php 
+		    wp_nav_menu( array(
+		        'menu'              => 'primary',
+		        'theme_location'    => 'primary',
+		        'depth'             => 2,
+		        'container'         => false,
+		        'menu_class'        => 'nav navbar-nav',
+		        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+		        'walker'            => new wp_bootstrap_navwalker())
+		    );
+		?>
+
+    </div>
+
 </div>
+

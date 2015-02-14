@@ -16,3 +16,35 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<div class="container container-logo">
+	<div class="row">
+		<div class="col-sm-2">
+			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="eLearning Pioneers" /></a>	
+		</div>
+		<div class="col-sm-10">
+			<h1 class="tagline">Female Faculty Development Program</h1>
+		</div>
+	</div>
+</div>
+
+<div class="navbar navbar-default">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        
+        <div class="navbar-offcanvas offcanvas">
+            <ul class="nav navbar-nav">
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>

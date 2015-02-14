@@ -41,7 +41,7 @@ function elp_scripts() {
 	if ( !is_admin() ) {
 		if ( WP_DEBUG === true ) {
 			wp_enqueue_style( 'elp-bootstrap', get_template_directory_uri().'/css/bootstrap.css' );
-			wp_enqueue_style( 'elp-jasny', get_template_directory_uri().'/css/jasny-bootstrap.css' );
+			wp_enqueue_style( 'elp-jasny', get_template_directory_uri().'/css/components.css' );
 			wp_enqueue_style( 'elp-style', get_template_directory_uri().'/css/style.css' );
 
 			wp_enqueue_script( 'elp-components', get_template_directory_uri() . '/js/components.js', array('jquery'), '20141115', true );

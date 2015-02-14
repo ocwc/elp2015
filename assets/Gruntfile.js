@@ -39,8 +39,9 @@ module.exports = function (grunt) {
           {src: 'less/bootstrap.less', 
            dest: '../css/bootstrap.css',
            nonull: true},
-          {src: 'bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css',
-           dest: '../css/jasny-bootstrap.css',
+          {src: ['bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.css',
+                 'bower_components/ResponsiveSlides.js/responsiveslides.css'],
+           dest: '../css/components.css',
            nonull: true}
         ]
       },
@@ -53,7 +54,7 @@ module.exports = function (grunt) {
           {dest: '../css/style.min.css',
            src: [
             '../css/bootstrap.css',
-            '../css/jasny-bootstrap.css',
+            '../css/components.css',
             '../css/style.css'
            ],
            nonull: true}
@@ -86,6 +87,7 @@ module.exports = function (grunt) {
         dest: '../js/components.js',
         src: [
             'bower_components/fingerprint/fingerprint.js',
+            'bower_components/ResponsiveSlides.js/responsiveslides.js',
             'bower_components/jasny-bootstrap/js/offcanvas.js',
             'bower_components/bootstrap/dist/js/bootstrap.js',
             // 'js/dropdowns-enhancement.js',

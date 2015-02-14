@@ -4,6 +4,7 @@ css/style.css
 css/style.min.css
 css/*.map
 css/bootstrap.css
+/css/
 js/*
 DefinitionCache/
 *.DS_Store

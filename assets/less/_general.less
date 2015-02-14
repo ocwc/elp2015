@@ -6,3 +6,74 @@ body {
 	padding-top: 10px;
 	padding-bottom: 15px;
 }
+
+.container-slides {
+	margin-top: -20px;
+}
+
+/*
+ * Slides
+ */
+
+.card {
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+
+	width: 90%;
+
+	@media @sm-up {
+		width: 60%;
+	}
+
+	color: #FFF;
+	font-family: @headings-font-family;
+
+}
+
+.card a:hover,
+.attribution a:hover {
+	color: #FFF;
+	text-decoration: none;	
+}
+
+.card-title {
+	display: block;
+	width: 100%;
+	
+	font-size: 28px;
+	text-shadow: 2px 1px 1px #000000;
+
+	@media @xs {
+		font-size: 14px;
+	}
+
+	@media @md-up {
+		width: 50%;
+	}
+}
+
+.card-description {
+	font-size: 16px;
+	text-shadow: 2px 1px 1px #000000;
+
+	@media @xs {
+		font-size: 10px;
+	}
+}
+
+.attribution {
+	position: absolute;
+	bottom: 15px;
+	right: 30px;
+
+	@media @xs {
+		display: none;
+	}
+}
+
+.attribution a {
+	color: #FFF;
+	font-size: 14px;
+	text-shadow: 2px 1px 1px #000000;
+}

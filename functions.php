@@ -15,21 +15,11 @@ function elp_setup() {
 	add_image_size( 'slideshow-image', 1170, 400, true);
 
 	register_sidebar( array(
-	   'name' => __( 'Footer'),
-	   'id' => 'footer',
-	   'description' => __( 'Footer area', 'cf' ),
-	   'before_widget' => '<div class="col-sm-2"><aside id="%1$s" class="widget %2$s">',
-	   'after_widget' => "</aside></div>",
-	   'before_title' => '<h3 class="footer-title">',
-	   'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
 	   'name' => __( 'Footer Wide'),
 	   'id' => 'footer-wide',
 	   'description' => __( 'Footer area', 'cf' ),
-	   'before_widget' => '<div class="col-sm-4"><aside id="%1$s" class="widget %2$s">',
-	   'after_widget' => "</aside></div>",
+	   // 'before_widget' => '<div class="col-sm-4"><aside id="%1$s" class="widget %2$s">',
+	   // 'after_widget' => "</aside></div>",
 	   'before_title' => '<h3 class="footer-title">',
 	   'after_title' => '</h3>',
 	) );
@@ -42,6 +32,19 @@ function elp_setup() {
 	   	'after_widget' => "</aside></div>"
 	));
 
+	register_sidebar( array(
+		'name' => 'Organizers',
+		'id' => 'organizers',
+		'before_widget' => '<div class="col-sm-6">',
+		'after_widget' => '</div>'
+	));
+
+	register_sidebar( array(
+		'name' => 'Partners',
+		'id' => 'partners',
+		'before_widget' => '<div class="col-sm-6">',
+		'after_widget' => '</div>'
+	));
 }
 add_action( 'after_setup_theme', 'elp_setup' );
 

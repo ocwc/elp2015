@@ -1,5 +1,6 @@
 <div class="col-sm-4">
-	<a class="highlight-box <?php echo 'highlight-box-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" href="#">
+	<a class="highlight-box <?php echo 'highlight-box-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" 
+		href="<?php the_field('widget_url', 'widget_' . $widget_id ); ?>">
 		
 		<span class="highlight-title">About the Program</span>
 
@@ -11,6 +12,7 @@
 		<?php the_field('widget_description', 'widget_' . $widget_id ); ?>
 	</p>
 
-	<a class="btn <?php echo 'btn-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" href="#">Read more</a>
+	<a class="btn <?php echo 'btn-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" 
+		href="<?php the_field('widget_url', 'widget_' . $widget_id ); ?>">Read more</a>
 
 </div>

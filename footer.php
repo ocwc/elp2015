@@ -1,24 +1,26 @@
-<div class="container container-white">
-	<div class="row">
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2>Organizers</h2>
-					<?php dynamic_sidebar('organizers'); ?>
+<?php if ( is_home() ) : ?>
+	<div class="container container-white">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Organizers</h2>
+						<?php dynamic_sidebar('organizers'); ?>
+					</div>
 				</div>
-			</div>
 
-		</div>
-		<div class="col-sm-6">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2>Partners</h2>
-					<?php dynamic_sidebar('partners'); ?>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Partners</h2>
+						<?php dynamic_sidebar('partners'); ?>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+<?php endif; ?>
 
 <div class="container footer-container">
 	

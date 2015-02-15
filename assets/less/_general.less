@@ -11,6 +11,11 @@ body {
 	margin-top: -20px;
 }
 
+.container-white {
+	background-color: white;
+	padding-bottom: 20px;
+}
+
 /*
  * Slides
  */
@@ -76,4 +81,46 @@ body {
 	color: #FFF;
 	font-size: 14px;
 	text-shadow: 2px 1px 1px #000000;
+}
+
+/*
+ * Home - Higlights
+ */
+
+.highlight-box {
+	display: block;
+	position: relative;
+
+	height: 80px;
+
+	margin-top: 15px;
+}
+
+.highlight-title {
+	position: absolute;
+	bottom: 5px;
+	left: 15px;
+
+	color: white;
+
+	.arial400();
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.highlight-description {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.highlight-box-green {
+	background-color: @green;
+}
+
+.highlight-box-greenLight {
+	background-color: @greenLight;
+}
+
+.highlight-box-yellow {
+	background-color: @yellow;
 }

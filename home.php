@@ -6,4 +6,10 @@
 	</div>
 </div>
 
+<div class="container container-white">
+	<div class="row">
+		<?php dynamic_sidebar('homepage_top'); ?>
+	</div>
+</div>
+
 <?php get_footer(); ?>

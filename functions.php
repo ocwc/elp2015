@@ -34,6 +34,14 @@ function elp_setup() {
 	   'after_title' => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name' => 'Home page',
+		'id' => 'homepage_top',
+		'description' => 'Home page',
+	   	'before_widget' => '<div class="col-sm-4"><aside id="%1$s" class="widget %2$s">',
+	   	'after_widget' => "</aside></div>"
+	));
+
 }
 add_action( 'after_setup_theme', 'elp_setup' );
 
@@ -58,4 +66,5 @@ require get_template_directory() . '/lib/wp_bootstrap_navwalker.php';
 
 require get_template_directory() . '/inc/post-types.php';
 require get_template_directory() . '/inc/filters.php';
+require get_template_directory() . '/inc/widgets.php';
 // require get_template_directory() . '/inc/actions.php';

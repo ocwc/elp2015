@@ -2,7 +2,7 @@
 	<a class="highlight-box <?php echo 'highlight-box-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" 
 		href="<?php the_field('widget_url', 'widget_' . $widget_id ); ?>">
 		
-		<span class="highlight-title">About the Program</span>
+		<span class="highlight-title"><?php echo $title; ?></span>
 
 		<img class="pull-right" 
 			 src="<?php echo get_field('widget_image', 'widget_' . $widget_id )['url']; ?>" />

@@ -16,9 +16,14 @@
 			<div class="col-sm-12">
 				<h2>News & Updates</h2>
 			</div>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php $custom_query = new WP_Query(array(
+									'post_type' => 'post'
+									));
+			?>
+			<?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
 				<?php get_template_part( 'partials/content', get_post_type() . '_excerpt' ); ?>
 			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
 		</div>
 	<?php endif; ?>
 </div>

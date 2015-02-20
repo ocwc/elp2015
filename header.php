@@ -30,10 +30,10 @@
 	</div>
 </div>
 
-<div class="container container-logo-xs">
+<div class="container container-logo-xs visible-xs-block">
 	<div class="row">
 		<div class="col-sm-12 text-center">
-			<a href="/" class="visible-xs"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-full.png" alt="eLearning Pioneers" /></a>	
+			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-full.png" alt="eLearning Pioneers" /></a>	
 		</div>
 	</div>
 </div>

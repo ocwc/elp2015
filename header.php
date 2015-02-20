@@ -30,15 +30,23 @@
 	</div>
 </div>
 
+<div class="container container-logo-xs">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<a href="/" class="visible-xs"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-full.png" alt="eLearning Pioneers" /></a>	
+		</div>
+	</div>
+</div>
 
 <div class="navbar container navbar-default">
+	
+
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand visible-xs" href="/">eLearning Pioneers</a>
     </div>
 
     <div class="navbar-offcanvas offcanvas">

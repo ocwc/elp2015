@@ -8,6 +8,7 @@
   margin-bottom: 0;
 
   #gradient > .vertical(@violetDark, @violetLight, 0%, 100%);
+
 }
 
 .navbar-nav > li {
@@ -28,10 +29,26 @@
   }
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  @media @xs {
+    color: @violet;
+    font-weight: bold;
+  }
+}
+
 .offcanvas .navbar-brand {
   color: @violet;
 }
 
 .dropdown-menu > li > a {
   padding: 8px 20px;
+}
+
+.container-logo-xs {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container-logo-xs img {
+  margin: 0 auto;
 }

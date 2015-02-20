@@ -13,6 +13,8 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+<?php get_template_part('partials/_favicons'); ?>
 </head>
 
 <body <?php body_class('offcanvas-relative'); ?>>

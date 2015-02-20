@@ -17,7 +17,7 @@
 				<h2>News & Updates</h2>
 			</div>
 			<?php $custom_query = new WP_Query(array(
-									'post_type' => 'post'
+										'post_type' => 'post'
 									));
 			?>
 			<?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>

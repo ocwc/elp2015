@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 organizers">
 						<h2>Organizers</h2>
 						<?php dynamic_sidebar('organizers'); ?>
 					</div>
@@ -12,7 +12,7 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-sm-12 partners">
 						<h2>Partners</h2>
 						<?php dynamic_sidebar('partners'); ?>
 					</div>

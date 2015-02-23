@@ -3,13 +3,17 @@ body {
 }
 
 .container-logo {
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
 .container-white {
 	background-color: white;
 	padding-bottom: 20px;
+}
+
+.container-white-home {
+	padding-bottom: 0;
 }
 
 /*
@@ -109,6 +113,8 @@ body {
 	padding-bottom: 10px;
 
 	min-height: 100px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .highlight-box-green {
@@ -127,6 +133,10 @@ body {
 	color: @violet;
 }
 
+.btn-home-readmore {
+	margin-left: 15px;
+}
+
 /*
  * News wrapper
  */
@@ -139,7 +149,11 @@ body {
 .organizers h2,
 .partners h2 {
 	background-color: @gray-lighter;
-	padding-left: 5px;
+	padding-left: 15px;
+}
+
+.post-excerpt {
+	margin-left: 15px;
 }
 
 /*
@@ -154,3 +168,37 @@ body {
 .widget_text {
 	list-style: none;
 }
+
+.license-text {
+	@media @xs {
+		padding-top: 5px;
+	}
+	
+	@media @md {
+		padding-left: 35px;
+	}
+}
+
+/* 
+ * Entries
+ */
+
+.entry-title {	
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+
+	text-align: left;
+}
+
+.entry-title-row {
+	background-color: #A0C337;
+}
+
+.entry-title a {
+	color: white;
+	font-weight: normal;
+}
+
+

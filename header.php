@@ -21,25 +21,13 @@
 
 <div class="container container-logo hidden-xs">
 	<div class="row">
-		<div class="col-sm-2">
-			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="eLearning Pioneers" /></a>	
-		</div>
-		<div class="col-sm-10">
-			<h1 class="tagline">Female Faculty Development Program</h1>
-		</div>
-	</div>
-</div>
-
-<div class="container container-logo-xs visible-xs-block">
-	<div class="row">
 		<div class="col-sm-12 text-center">
-			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-full.png" alt="eLearning Pioneers" /></a>	
+			<a href="/" class="logo"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-wide.png" alt="eLearning Pioneers" /></a>	
 		</div>
 	</div>
 </div>
 
 <div class="navbar container navbar-default">
-	
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
@@ -68,3 +56,10 @@
 
 </div>
 
+<div class="container container-logo-xs visible-xs-block">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-wide.png" alt="eLearning Pioneers" /></a>	
+		</div>
+	</div>
+</div>

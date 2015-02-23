@@ -35,14 +35,14 @@ function elp_setup() {
 	register_sidebar( array(
 		'name' => 'Organizers',
 		'id' => 'organizers',
-		'before_widget' => '<div class="col-sm-6">',
+		'before_widget' => '<div class="col-xs-6 col-sm-6">',
 		'after_widget' => '</div>'
 	));
 
 	register_sidebar( array(
 		'name' => 'Partners',
 		'id' => 'partners',
-		'before_widget' => '<div class="col-sm-6">',
+		'before_widget' => '<div class="col-xs-6 col-sm-6">',
 		'after_widget' => '</div>'
 	));
 }

@@ -12,7 +12,7 @@
 		<?php the_field('widget_description', 'widget_' . $widget_id ); ?>
 	</p>
 
-	<a class="btn <?php echo 'btn-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" 
+	<a class="btn <?php echo 'btn-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?> btn-home-readmore" 
 		href="<?php the_field('widget_url', 'widget_' . $widget_id ); ?>">Read more</a>
 
 </div>

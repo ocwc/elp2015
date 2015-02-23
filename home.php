@@ -12,7 +12,7 @@
 	<div class="row entry-title-row">
 		<div class="col-sm-12 col-md-6">
 			<h2 class="entry-title">
-				<a href="/" rel="bookmark">Welcome to eLearning Pioneers Web site</a>
+				<a href="/" rel="bookmark">Welcome to the eLearning Pioneers Web site</a>
 			</h2>
 		</div>
 	</div>

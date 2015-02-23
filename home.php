@@ -10,7 +10,7 @@
 
 <div class="container container-white container-white-home">
 	<div class="row entry-title-row">
-		<div class="col-sm-12 col-md-6">
+		<div class="col-sm-12">
 			<h2 class="entry-title">
 				<a href="/" rel="bookmark">Welcome to the eLearning Pioneers Web site</a>
 			</h2>

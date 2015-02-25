@@ -10,7 +10,7 @@
 
 <div class="container container-white">
 	<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-		<div class="col-sm-12 col-md-offset-1 col-md-10">			
+		<div class="col-sm-12 col-md-offset-1 col-md-10 entry-content">
 			<div class="row">
 				<div class="col-sm-12">
 					<p>

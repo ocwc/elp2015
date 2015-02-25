@@ -11,7 +11,7 @@
 <div class="container container-white container-white-home">
 	<div class="row entry-title-row">
 		<img class="entry-title-image" src="<?php echo get_template_directory_uri(); ?>/img/top_image.png" />
-		<div class="col-sm-7 pull-right">
+		<div class="col-sm-12 col-md-6 pull-right">
 			<h2 class="entry-title text-right">
 				<a href="/" rel="bookmark">Welcome to the eLearning Pioneers Web site</a>
 			</h2>

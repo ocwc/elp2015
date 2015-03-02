@@ -40,7 +40,14 @@
             },
             "return_format": "array",
             "preview_size": "full",
-            "library": "all"
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
         },
         {
             "key": "field_54e08bb4245e5",
@@ -76,7 +83,10 @@
             "choices": {
                 "green": "Green",
                 "greenLight": "Light Green",
-                "yellow": "Yellow"
+                "yellow": "Yellow",
+                "violet": "Violet",
+                "violetLight": "Light Violet",
+                "violetDark": "Dark Violet"
             },
             "default_value": {
                 "": ""
@@ -105,6 +115,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1424129069,
-    "local": "json"
+    "modified": 1425303290
 }

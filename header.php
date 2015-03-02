@@ -20,11 +20,11 @@
 <body <?php body_class('offcanvas-relative'); ?>>
 
 <div class="container container-white container-logo hidden-xs">
-	<div class="row">
-		<div class="col-sm-2 text-right">
-			<a href="/" class="logo"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-statement.png" alt="eLearning Pioneers" /></a>	
+	<div class="">
+		<div class="col-sm-3 text-right">
+			<a href="/" class="logo"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-wide.png" alt="eLearning Pioneers" /></a>	
 		</div>
-		<div class="col-sm-10 row">
+		<div class="col-sm-7 col-sm-offset-1 row row-tagline">
 			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/tagline.png" alt="eLearning Pioneers" />			
 		</div>
 	</div>

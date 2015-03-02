@@ -13,7 +13,7 @@
 		<img class="entry-title-image" src="<?php echo get_template_directory_uri(); ?>/img/top_image.png" />
 		<div class="col-sm-12 col-md-6 pull-right">
 			<h2 class="entry-title text-left">
-				<a href="/" rel="bookmark">Welcome to the eLearning Pioneers Web site</a>
+				<span class="u-color-white">Welcome to the eLearning Pioneers Web site</span>
 			</h2>
 		</div>
 	</div>

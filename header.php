@@ -21,11 +21,8 @@
 
 <div class="container container-white container-logo hidden-xs">
 	<div class="">
-		<div class="col-sm-3 text-right">
-			<a href="/" class="logo"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-wide.png" alt="eLearning Pioneers" /></a>	
-		</div>
-		<div class="col-sm-7 col-sm-offset-1 row row-tagline">
-			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/tagline.png" alt="eLearning Pioneers" />			
+		<div class="col-sm-4 text-right">
+			<a href="/" class="logo"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-bilingual.png" alt="eLearning Pioneers" /></a>	
 		</div>
 	</div>
 </div>

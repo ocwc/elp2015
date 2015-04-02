@@ -36,11 +36,19 @@
 .navbar-default .navbar-nav > .active > a {
   // color: @violet;
   color: @white;
+
+  @media @xs {
+    color: @violet;
+  }
 }
 
 .navbar-default .navbar-offcanvas {
   border: none;
   background-color: @violetLight;
+
+  @media @xs {
+    background-color: @white;
+  }
 }
 
 .navbar-nav > li:last-child {
@@ -76,8 +84,10 @@
 }
 
 .container-logo-xs {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: @white;
 }
 
 .container-logo-xs img {

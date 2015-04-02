@@ -64,7 +64,7 @@
 <div class="container container-logo-xs visible-xs-block">
 	<div class="row">
 		<div class="col-sm-12 text-center">
-			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-wide.png" alt="eLearning Pioneers" /></a>	
+			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-bilingual.png" alt="eLearning Pioneers" /></a>	
 		</div>
 	</div>
 </div>

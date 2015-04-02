@@ -86,7 +86,8 @@
                 "yellow": "Yellow",
                 "violet": "Violet",
                 "violetLight": "Light Violet",
-                "violetDark": "Dark Violet"
+                "violetDark": "Dark Violet",
+                "transparent: Transparent": "transparent: Transparent"
             },
             "default_value": {
                 "": ""
@@ -115,5 +116,5 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1425303290
+    "modified": 1427980750
 }

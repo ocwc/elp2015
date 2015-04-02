@@ -9,7 +9,7 @@
 */ ?>
 
 <div class="container container-white container-white-home">
-	<div class="entry-title-row">
+	<div class="entry-title-row row">
 		<img class="entry-title-image" src="<?php echo get_template_directory_uri(); ?>/img/top_image.png" />
 		<div class="col-sm-12 col-md-6 pull-right">
 			<h2 class="entry-title text-left">

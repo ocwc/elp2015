@@ -12,6 +12,10 @@ function elp_setup() {
 		'primary' => __( 'Primary Menu', 'op' ),
 	) );
 
+	register_nav_menus( array(
+		'primary' => __( 'Side menu', 'op' ),
+	) );
+
 	add_image_size( 'slideshow-image', 1170, 400, true);
 
 	register_sidebar( array(

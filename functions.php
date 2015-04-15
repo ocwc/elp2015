@@ -13,7 +13,7 @@ function elp_setup() {
 	) );
 
 	register_nav_menus( array(
-		'primary' => __( 'Side menu', 'op' ),
+		'side' => __( 'Side menu', 'op' ),
 	) );
 
 	add_image_size( 'slideshow-image', 1170, 400, true);

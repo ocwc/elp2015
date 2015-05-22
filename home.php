@@ -21,10 +21,11 @@
 */ ?>
 
 <div class="container container-white">
-	<div class="row">
+	<div class="row highlights-wrapper">
 		<?php dynamic_sidebar('homepage_top'); ?>
 	</div>
 
+	<?php /*
 	<?php if ( have_posts() ) : ?>
 		<div class="row news-wrapper">
 			<div class="col-sm-12">
@@ -40,6 +41,7 @@
 			<?php wp_reset_postdata(); ?>
 		</div>
 	<?php endif; ?>
+	*/ ?>
 </div>
 
 <?php get_footer(); ?>

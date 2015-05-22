@@ -82,18 +82,38 @@ a.card:hover,
 
 .attribution {
 	position: absolute;
-	bottom: 15px;
-	right: 30px;
+	bottom: 30px;
+	left: 0px;
 
 	@media @xs {
 		display: none;
 	}
 }
 
+.attribution:hover a {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 .attribution a {
+	padding: 20px 50px 20px 15px;
+
 	color: #FFF;
 	font-size: 14px;
-	text-shadow: 2px 1px 1px #000000;
+	// text-shadow: 2px 1px 1px #000000;
+}
+
+.attribution i {
+	border: 2px solid @white;
+	border-radius: 25px;
+	padding: 3px 8px;
+}
+
+.attribution-text {
+	visibility: hidden;
+}
+
+.attribution:hover .attribution-text {
+	visibility: visible;
 }
 
 /*

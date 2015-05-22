@@ -2,7 +2,7 @@
 									'post_type' => 'slideshow',
 									'ignore_sticky_posts' => 1,
 									'orderby' => 'rand',
-									'posts_per_page' => -1
+									'posts_per_page' => 1
 									));
 ?>
 
@@ -47,7 +47,10 @@
 
 			<?php if ( get_field('slideshow_photo_license_text') ) :?>
 				<div class="attribution">
-					<a href="<?php the_field('slideshow_photo_source_url'); ?>" ><?php the_field('slideshow_photo_license_text'); ?></a>
+					<a href="<?php the_field('slideshow_photo_source_url'); ?>" target="_blank">
+						<i class="fa fa-info"></i> 
+						<span class="attribution-text"><?php the_field('slideshow_photo_license_text'); ?></span>
+					</a>
 				</div>
 			<?php endif; ?>
 		</li>

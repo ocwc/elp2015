@@ -2,7 +2,7 @@
 									'post_type' => 'slideshow',
 									'ignore_sticky_posts' => 1,
 									'orderby' => 'rand',
-									'posts_per_page' => 1
+									'posts_per_page' => -1
 									));
 ?>
 

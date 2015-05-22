@@ -16,15 +16,19 @@ body {
 	padding-bottom: 0;
 }
 
+.container-slides {
+	position: relative;
+}
+
 /*
  * Slides
  */
 
 .card {
 	position: absolute;
-	top: 35%;
+	top: 0px;
 	right: 0px;
-	width: 90%;
+	width: 100%;
 
 	padding: 30px 15px 10px 15px;
 
@@ -33,8 +37,13 @@ body {
 
 	background-color: rgba(0, 0, 0, 0.6);
 
+	@media @xs {
+		padding-top: 10px;
+	}
+
 	@media @sm-up {
-		width: 60%;
+		top: 35%;
+		width: 50%;
 	}
 }
 
@@ -54,7 +63,7 @@ a.card:hover,
 	text-transform: uppercase;
 
 	@media @xs {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	@media @md-up {
@@ -65,6 +74,10 @@ a.card:hover,
 .card-readmore {
 	margin-top: 20px;
 	text-transform: uppercase;
+
+	@media @xs {
+		display: none;
+	}
 }
 
 .card-readmore i {
@@ -76,7 +89,8 @@ a.card:hover,
 	// text-shadow: 2px 1px 1px #000000;
 
 	@media @xs {
-		font-size: 10px;
+		font-size: 12px;
+		line-height: 12px;
 	}
 }
 
@@ -109,7 +123,9 @@ a.card:hover,
 }
 
 .attribution-text {
-	visibility: hidden;
+	@media @sm-up {
+		visibility: hidden;
+	}
 }
 
 .attribution:hover .attribution-text {
@@ -290,4 +306,50 @@ a.card:hover,
 body .gform_wrapper label.gfield_label + div.ginput_container {
 	margin-top: 0 !important;
 	margin-bottom: .750em !important;
+}
+
+/* Responsive slides */
+
+.rslider-buttons_tabs {
+  text-align: center;
+
+  position: absolute;
+  left: 43%;
+  bottom: 0px;
+  z-index: 20;
+
+  @media @xs {
+  	display: none;
+  }
+}
+
+.rslider-buttons_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+}
+
+.rslider-buttons_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #EEE;
+  background: rgba(255, 255, 255, .4);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  
+  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, .8);
+
+  width: 10px;
+  height: 10px;
+  }
+
+.rslider-buttons_here a {
+  background: #FFF;
+  background: rgba(255, 255, 255, .8);
 }

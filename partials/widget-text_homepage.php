@@ -2,11 +2,12 @@
 	<a class="highlight-box <?php echo 'highlight-box-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?>" 
 		href="<?php the_field('widget_url', 'widget_' . $widget_id ); ?>">
 
-		<!--
+		<?php /*
 		<img class="" 
 			 src="<?php echo get_field('widget_image', 'widget_' . $widget_id )['url']; ?>" />
-		-->
+		*/ ?>
 
+		<?php /*
 		<?php $url = get_field('widget_url', 'widget_' . $widget_id ); ?>
 		<?php if ( strpos($url, '/about') > 0) : ?>
 			<icon class="fa fa-question"></icon>
@@ -15,6 +16,10 @@
 		<?php else : ?>
 			<icon class="fa fa-desktop"></icon>
 		<?php endif; ?>
+
+		*/ ?>
+
+		<i class="fa <?php the_field('widget_faicon', 'widget_' . $widget_id); ?>"></i>
 		
 		<span class="highlight-title"><?php echo $title; ?></span>
 
@@ -24,7 +29,8 @@
 		<?php the_field('widget_description', 'widget_' . $widget_id ); ?>
 	</p>
 
+	<?php /*
 	<a class="btn btn-violet <?php echo 'btn-' . get_field('widget_background_color', 'widget_' . $widget_id ); ?> btn-home-readmore" 
 		href="<?php the_field('widget_url', 'widget_' . $widget_id ); ?>">Read more</a>
-
+	*/ ?>
 </div>

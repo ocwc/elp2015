@@ -38,15 +38,17 @@
 				<?php endif; ?>
 			
 				<?php if ( get_field('slideshow_url') ) : ?>
+					<div class="card-readmore"><i class="fa fa-arrow-right"></i> Read more</div>
 					</a>
 				<?php else : ?>
 					</span>
 				<?php endif; ?>
-			<div class="attribution">
-				<?php if ( get_field('slideshow_photo_license_text') ) :?>
+			<?php endif; ?>
+
+			<?php if ( get_field('slideshow_photo_license_text') ) :?>
+				<div class="attribution">
 					<a href="<?php the_field('slideshow_photo_source_url'); ?>" ><?php the_field('slideshow_photo_license_text'); ?></a>
-				<?php endif; ?>
-			</div>
+				</div>
 			<?php endif; ?>
 		</li>
 	<?php endwhile; ?>

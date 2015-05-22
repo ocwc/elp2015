@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
-<?php /*
 <div class="container container-slides">
 	<div class="row">
 		<?php get_template_part('partials/_rslides'); ?>
 	</div>
 </div>
-*/ ?>
 
+<?php /*
 <div class="container container-white container-white-home">
 	<div class="entry-title-row row">
 		<img class="entry-title-image" src="<?php echo get_template_directory_uri(); ?>/img/top_image.png" />
@@ -18,6 +17,8 @@
 		</div>
 	</div>
 </div>
+
+*/ ?>
 
 <div class="container container-white">
 	<div class="row">

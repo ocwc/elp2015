@@ -22,45 +22,58 @@ body {
 
 .card {
 	position: absolute;
-	bottom: 15px;
-	left: 30px;
-
+	top: 35%;
+	right: 0px;
 	width: 90%;
 
-	@media @sm-up {
-		width: 60%;
-	}
+	padding: 30px 15px 10px 15px;
 
 	color: #FFF;
 	font-family: @headings-font-family;
 
+	background-color: rgba(0, 0, 0, 0.6);
+
+	@media @sm-up {
+		width: 60%;
+	}
 }
 
-.card a:hover,
+a.card:hover,
 .attribution a:hover {
 	color: #FFF;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .card-title {
 	display: block;
 	width: 100%;
 	
-	font-size: 28px;
-	text-shadow: 2px 1px 1px #000000;
+	font-size: 24px;
+	line-height: 150%;
+	// text-shadow: 2px 1px 1px #000000;
+	text-transform: uppercase;
 
 	@media @xs {
 		font-size: 14px;
 	}
 
 	@media @md-up {
-		width: 50%;
+		// width: 50%;
 	}
 }
 
+.card-readmore {
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.card-readmore i {
+	color: @green;
+}
+
 .card-description {
-	font-size: 16px;
-	text-shadow: 2px 1px 1px #000000;
+	font-size: 14px;
+	// text-shadow: 2px 1px 1px #000000;
 
 	@media @xs {
 		font-size: 10px;

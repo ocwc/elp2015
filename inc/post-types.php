@@ -39,3 +39,43 @@ function elp_posttype_slideshow() {
 	register_post_type( 'slideshow', $args );
 }
 add_action( 'init', 'elp_posttype_slideshow', 0 );
+
+function elp_posttype_testimonial() {
+	$labels = array(
+		'name'                => 'Testimonials',
+		'singular_name'       => 'Testimonial',
+		'menu_name'           => 'Testimonial',
+		'parent_item_colon'   => 'Parent Testimonial:',
+		'all_items'           => 'All Testimonials',
+		'view_item'           => 'View Testimonial',
+		'add_new_item'        => 'Add New Testimonial',
+		'add_new'             => 'New Testimonial',
+		'edit_item'           => 'Edit Testimonial',
+		'update_item'         => 'Update Testimonial',
+		'search_items'        => 'Search testimonials',
+		'not_found'           => 'No testimonials found',
+		'not_found_in_trash'  => 'No testimonials found in Trash',
+	);
+	$args = array(
+		'label'               => 'testimonial',
+		'description'         => 'Home page testimonial',
+		'labels'              => $labels,
+		'supports'            => array( 'title' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => false,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'           => 'dashicons-format-quote',
+		'can_export'          => false,
+		'has_archive'         => false,
+		'exclude_from_search' => true,
+		'publicly_queryable'  => false,
+		'rewrite'             => false,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'testimonial', $args );
+}
+add_action( 'init', 'elp_posttype_testimonial', 0 );

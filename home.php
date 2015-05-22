@@ -25,6 +25,11 @@
 		<?php dynamic_sidebar('homepage_top'); ?>
 	</div>
 
+	<div class="row testimonials-wrapper">
+		<h2 class="testimonial-title">What participants are saying</h2>
+		<?php get_template_part('partials/_testimonials'); ?>
+	</div>
+
 	<?php /*
 	<?php if ( have_posts() ) : ?>
 		<div class="row news-wrapper">

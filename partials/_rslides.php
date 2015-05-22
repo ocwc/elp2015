@@ -6,7 +6,7 @@
 									));
 ?>
 
-<ul class="rslides">
+<ul class="rslides rslides-slideshow">
 	<?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
 		<?php $image_list = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'slideshow-image' );
 

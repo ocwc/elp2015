@@ -26,7 +26,7 @@
 		</div>
 		<div class="col-sm-4 text-right pull-right social-icons">
 			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="https://www.youtube.com/channel/UCeKowwZYjlDRqEVagzLICuQ"><i class="fa fa-youtube"></i></a>
 			<a href="#"><i class="fa fa-twitter"></i></a>
 		</div>
 	</div>

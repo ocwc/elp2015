@@ -137,7 +137,10 @@ a.card:hover,
  */
 
 .highlights-wrapper {
+	padding-top: 15px;
 	background-color: lighten(@gray, 55%);
+
+	border-bottom: 1px solid @gray-light;
 }
 
 .highlight-box {
@@ -155,13 +158,17 @@ a.card:hover,
 	// bottom: 5px;
 	top: 5px;
 	// left: 15px;
-	left: 50px;
+	left: 75px;
 
 	color: white;
 
 	.arial600();
 	font-size: 20px;
 	text-transform: uppercase;
+}
+
+.fa-lightbulb-o + .highlight-title {
+	left: 55px;
 }
 
 .highlight-description {
@@ -232,8 +239,12 @@ a.card:hover,
 .news-wrapper h2,
 .organizers h2,
 .partners h2 {
-	background-color: @gray-lighter;
-	padding-left: 15px;
+	// background-color: @gray-lighter;
+	// padding-left: 15px;
+	text-align: center;
+	color: @gray;
+	// font-weight: 600;
+	
 }
 
 .post-excerpt {
